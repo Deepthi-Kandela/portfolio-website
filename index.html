@@ -18,16 +18,31 @@
 
 <body>
 
-  <!-- Hero / Header Section -->
-  <header class="hero">
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <h2 class="logo">Deepthi Portfolio</h2>
+      <ul class="nav-links">
+        <li><a href="#hero" class="active">Home</a></li>
+        <li><a href="#description">Projects</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="cta-btn">Get Started</button>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
     <div class="hero-content">
       <h1>Frontend Developer Portfolio</h1>
       <p>Crafting beautiful and responsive websites using HTML & CSS</p>
       <a href="#description" class="btn">View My Work</a>
     </div>
-  </header>
+  </section>
 
-  <!-- Description / Product Section -->
+  <!-- Description Section -->
   <section id="description" class="description">
     <div class="description-text">
       <h2>Featured Project</h2>
@@ -35,7 +50,7 @@
       <a href="#contact" class="btn">Get Started</a>
     </div>
     <div class="description-image">
-      <img src="images/product.png" alt="Portfolio Project Screenshot">
+      <img src="Screenshot (166).png" alt="Portfolio Project Screenshot">
     </div>
   </section>
 
@@ -43,25 +58,42 @@
   <section id="projects">
     <h2>My Projects</h2>
     <div class="project-gallery">
-
       <div class="project">
         <img src="Screenshot (157).png" alt="HTML Project">
         <h3>HTML Structure</h3>
         <p>Created a semantic layout using HTML5.</p>
       </div>
-
       <div class="project">
         <img src="Screenshot (158).png" alt="CSS Project">
         <h3>CSS Styling</h3>
         <p>Applied responsive styling with Flexbox and Grid.</p>
       </div>
-
       <div class="project">
         <img src="Screenshot (159).png" alt="Final Project">
         <h3>Final Website</h3>
         <p>Added interactive elements, hover effects, and forms.</p>
       </div>
+    </div>
+  </section>
 
+  <!-- Features Section -->
+  <section id="features" class="features">
+    <h2>Features</h2>
+    <div class="feature-item">Responsive Design</div>
+    <div class="feature-item">Interactive Elements</div>
+    <div class="feature-item">CSS Grid & Flexbox Layouts</div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="testimonials">
+    <h2>What Our Customers Say</h2>
+    <div class="testimonial">
+      <p>"This service is amazing!"</p>
+      <cite>- John Doe</cite>
+    </div>
+    <div class="testimonial">
+      <p>"It has helped me improve my business." </p>
+      <cite>- Jane Smith</cite>
     </div>
   </section>
 
@@ -69,7 +101,7 @@
   <section id="contact">
     <h2>Contact Me</h2>
     <form>
-      <label>Your Name</label>
+      <label>Kandela Deepthi</label>
       <input type="text" required>
       <label>Your Email</label>
       <input type="email" required>
@@ -89,5 +121,15 @@
     </div>
   </footer>
 
+  <!-- Smooth Scroll Script -->
+  <script>
+    const links = document.querySelectorAll(".nav-links a");
+    links.forEach(link => {
+      link.addEventListener("click", function(e){
+        links.forEach(l => l.classList.remove("active"));
+        this.classList.add("active");
+      });
+    });
+  </script>
 </body>
 </html>
