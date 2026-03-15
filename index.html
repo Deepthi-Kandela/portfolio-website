@@ -4,113 +4,82 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Deepthi Portfolio</title>
+  <title>Frontend Developer Portfolio</title>
 
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
 
-  <!-- HEADER -->
-  <header>
-    <nav>
-      <h2 class="logo">Deepthi Portfolio</h2>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#testimonials">Testimonials</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+  <!-- Hero / Header Section -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Frontend Developer Portfolio</h1>
+      <p>Crafting beautiful and responsive websites using HTML & CSS</p>
+      <a href="#description" class="btn">View My Work</a>
+    </div>
   </header>
 
-  <!-- HERO SECTION -->
-  <section id="home" class="hero">
-    <div class="hero-text">
-      <h1>Hi, I'm Deepthi</h1>
-      <p>Front-End Developer Trainee learning HTML & CSS</p>
-      <a href="#projects" class="btn">View My Work</a>
-      <a href="#contact" class="btn">Contact Me</a>
+  <!-- Description / Product Section -->
+  <section id="description" class="description">
+    <div class="description-text">
+      <h2>Featured Project</h2>
+      <p>This project showcases my skills in HTML and CSS. It features a clean layout, responsive design, hover effects, and interactive elements.</p>
+      <a href="#contact" class="btn">Get Started</a>
+    </div>
+    <div class="description-image">
+      <img src="images/product.png" alt="Portfolio Project Screenshot">
     </div>
   </section>
 
-  <!-- ABOUT SECTION -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I am Deepthi, a B.Tech student passionate about web development.
-      This portfolio website was created during the HTML/CSS Developer
-      Trainee Program.
-    </p>
-    <div class="skills">
-      <div class="skill-card">HTML5</div>
-      <div class="skill-card">CSS3</div>
-      <div class="skill-card">Responsive Design</div>
-    </div>
-  </section>
-
-  <!-- PROJECTS SECTION -->
+  <!-- Projects Section -->
   <section id="projects">
     <h2>My Projects</h2>
     <div class="project-gallery">
+
       <div class="project">
-        <img src="images/Screenshot(157).png" alt="HTML Project">
-        <h3>Day 17 – HTML Structure</h3>
-        <p>Created the website layout using semantic HTML elements.</p>
+        <img src="Screenshot (157).png" alt="HTML Project">
+        <h3>HTML Structure</h3>
+        <p>Created a semantic layout using HTML5.</p>
       </div>
 
       <div class="project">
-        <img src="images/Screenshot(158).png" alt="CSS Project">
-        <h3>Day 18 – CSS Styling</h3>
-        <p>Applied colors, layout styling and responsive design.</p>
+        <img src="Screenshot (158).png" alt="CSS Project">
+        <h3>CSS Styling</h3>
+        <p>Applied responsive styling with Flexbox and Grid.</p>
       </div>
 
       <div class="project">
-        <img src="images/Screenshot(159).png" alt="Final Website">
-        <h3>Day 19 – Final Website</h3>
-        <p>Added forms, icons, hover effects and interactivity.</p>
+        <img src="Screenshot (159).png" alt="Final Project">
+        <h3>Final Website</h3>
+        <p>Added interactive elements, hover effects, and forms.</p>
       </div>
+
     </div>
   </section>
 
-  <!-- TESTIMONIALS SECTION -->
-  <section id="testimonials">
-    <h2>Testimonials</h2>
-    <div class="testimonial-gallery">
-      <div class="testimonial">
-        <p>"Deepthi built an amazing website for us!" – Client A</p>
-      </div>
-      <div class="testimonial">
-        <p>"Highly recommended for frontend development!" – Client B</p>
-      </div>
-      <div class="testimonial">
-        <p>"Clean design and responsive layouts. Excellent work!" – Client C</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT SECTION -->
+  <!-- Contact Section -->
   <section id="contact">
     <h2>Contact Me</h2>
-    <p>Send a message using the form below.</p>
     <form>
       <label>Your Name</label>
       <input type="text" required>
-
       <label>Your Email</label>
       <input type="email" required>
-
       <label>Message</label>
       <textarea rows="4"></textarea>
-
       <button type="submit">Send Message</button>
     </form>
   </section>
 
-  <!-- FOOTER -->
+  <!-- Footer -->
   <footer>
     <p>© 2026 Deepthi Portfolio</p>
     <div class="social-icons">
